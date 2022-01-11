@@ -25,7 +25,7 @@ html * {
 }
 
 body {
-  background: var(--background);
+  background-color: rgba(121, 196, 91, 0.13);
   color: var(--text-color);
   font-family: var(--font-sans);
   font-size: 16px;

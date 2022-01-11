@@ -1,3 +1,8 @@
+.container {
+  background-color: white;
+  margin-top: 600px !important;
+}
+
 .article-list {
   margin: 0;
   padding: 0;

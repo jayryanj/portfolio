@@ -4,6 +4,7 @@ import get from 'lodash/get'
 
 import Layout from '../components/layout'
 import Hero from '../components/hero'
+import About from "../components/about"
 import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
@@ -13,10 +14,23 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Hero/>
+        <About/>
+      </Layout>
+    )
+  }
+  /**
+   * 
+    render() {
+    const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
+
+    return (
+      <Layout location={this.props.location}>
+        <Hero/>
         <ArticlePreview posts={posts} />
       </Layout>
     )
   }
+   */
 }
 
 export default RootIndex

@@ -11,7 +11,7 @@ const ArticlePreview = ({ posts }) => {
   if (!Array.isArray(posts)) return null
 
   return (
-    <Container>
+    <Container className={styles.container}>
       <ul className={styles.articleList}>
         {posts.map((post) => {
           return (
