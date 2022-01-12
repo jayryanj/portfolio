@@ -14,7 +14,7 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Hero/>
-        <About/>
+        <ArticlePreview posts={posts} />
       </Layout>
     )
   }

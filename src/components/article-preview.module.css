@@ -1,6 +1,8 @@
 .container {
   background-color: white;
-  margin-top: 600px !important;
+  max-width: none;
+  padding: 5em 5em;
+  margin-top: 5em;
 }
 
 .article-list {
