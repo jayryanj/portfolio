@@ -25,7 +25,9 @@ html * {
 }
 
 body {
-  background-color: rgba(121, 196, 91, 0.13);
+  /*background-color: rgba(121, 196, 91, 0.13);*/
+  background: rgb(143,172,155);
+  background: linear-gradient(180deg, rgba(143,172,155,1) 0%, rgb(217, 245, 228) 100%);
   color: var(--text-color);
   font-family: var(--font-sans);
   font-size: 16px;

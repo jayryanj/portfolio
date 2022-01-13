@@ -28,7 +28,8 @@
 .divider {
   width: 5rem;
   height: 0.30rem;
-  background-color: #607e5f;
+  /*background-color: #607e5f;*/
+  background-color: rgb(102, 126, 112);
   margin: 2em auto;
 }
 
