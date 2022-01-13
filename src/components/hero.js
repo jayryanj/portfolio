@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Container } from '@mui/material';
+import { Container, Button } from '@mui/material';
 
 import * as styles from './hero.module.css'
 
@@ -9,7 +9,7 @@ const Hero = () => {
         <div className={styles.hero}>
             <Container>
 
-                <StaticImage className={styles.picture} src="../images/portrait_small.jpg" alt="portrait" width={200}/>
+                <StaticImage className={styles.picture} src="../images/cartoon_portrait.png" alt="Jay"/>
 
                 <div className={styles.divider}></div>
 
@@ -18,10 +18,12 @@ const Hero = () => {
                 </h1>
 
                 <p className={styles.description}>
-                    I'm a Software Engineer from Hawai'i.
+                    I'm a Software Engineer from Hawaii.
                 </p>
 
                 <div className={styles.divider}></div>
+
+                <Button className={styles.button} variant="contained">Learn More</Button>
 
             </Container>
         </div>
