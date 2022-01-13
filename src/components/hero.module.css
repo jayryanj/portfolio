@@ -28,8 +28,8 @@
 .divider {
   width: 5rem;
   height: 0.30rem;
-  /*background-color: #607e5f;*/
-  background-color: rgb(102, 126, 112);
+  /*background-color: rgb(102, 126, 112);*/
+  background-color: white;
   margin: 2em auto;
 }
 
@@ -39,12 +39,14 @@
   font-weight: var(--extrabold);
   line-height: var(--solid);
   margin-top: 0.25em;
-  color: #2a4939;
+  /*color: #504136;*/
+  color: white;
   margin-bottom: 0.02em;
 }
 
 .description {
-  color: #5d7060;
+  /*color: #5d7060;*/
+  color: white;
   font-weight: 600;
   letter-spacing: 0.10em;
   font-size: 1.1em;

@@ -10,7 +10,8 @@
   display: flex;
   list-style: none;
   margin: 0;
-  gap: var(--space-xl);
+  gap: 2em;
+  /*color: #504136;*/
   color: white;
 }
 
@@ -25,11 +26,10 @@
   border-bottom: 1.5px solid transparent;
   color: currentColor;
   text-decoration: none;
-  padding: 5px;
 }
 
 .navigationItem a:hover {
-  border-bottom-color: white;
+  border-bottom-color: #504136;
   text-decoration: none;
 }
 
@@ -40,6 +40,7 @@
   flex-direction: row;
   flex-shrink: 0;
   gap: var(--space-md);
+  /*color: #504136;*/
   color: white;
 }
 
