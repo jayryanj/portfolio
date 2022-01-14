@@ -1,9 +1,9 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Container, Button } from '@mui/material';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 
-import * as styles from './hero.module.css'
+import * as styles from '../styles/hero.module.css'
 
 const Hero = () => {
     return(
@@ -15,7 +15,7 @@ const Hero = () => {
                 <div className={styles.divider}></div>
 
                 <h1 className={styles.aloha}>
-                    Aloha, I'm Jay.
+                    <span className={styles.angleBracket}>&#62;</span> Aloha, I'm Jay.
                 </h1>
 
                 <p className={styles.description}>
@@ -25,8 +25,7 @@ const Hero = () => {
                 <div className={styles.divider}></div>
 
                 <Button className={styles.button} variant="contained">
-                    <MailOutlineIcon className={styles.mailIcon} /> 
-                    Contact Me
+                    About Me
                 </Button>
 
             </Container>

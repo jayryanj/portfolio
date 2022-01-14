@@ -4,7 +4,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 
 import { Container } from "@mui/material"
 import Tags from './tags'
-import * as styles from './article-preview.module.css'
+import * as styles from '../styles/article-preview.module.css'
 
 const ArticlePreview = ({ posts }) => {
   if (!posts) return null

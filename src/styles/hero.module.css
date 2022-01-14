@@ -15,6 +15,7 @@
 .picture {
   width: 75vw;
   margin: auto;
+  border-radius: 50%;
 }
 
 .details {
@@ -31,20 +32,37 @@
   font-size: var(--text-title);
   font-weight: var(--extrabold);
   line-height: var(--solid);
-  margin-top: 0.25em;
-  color: #2f5241;
-  margin-bottom: 0.02em;
+  margin: 0.25em auto 0.02em auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #324e37;
+  border-right: 4px solid transparent;
+  border-left: 4px;
+  width: fit-content;
+  animation: blink 1.16s infinite
 }
+
+.angleBracket {
+  color: black;
+}
+
+@keyframes blink {
+    0%    { border-right-color: black; }
+    49%   { border-right-color: black; }
+    50%   { border-right-color: transparent;}
+    100%  { border-right-color: transparent; }
+}
+
 
 .divider {
   width: 5rem;
   height: 0.30rem;
-  background-color: #5e7a62;
+  background-color: #4d8f58;
   margin: 2em auto;
 }
 
 .description {
-  color: #5e7a62;
+  color: #45804f;
   font-weight: 600;
   letter-spacing: 0.10em;
   font-size: 1.1em;
@@ -57,16 +75,17 @@
 }
 
 .button {
-  background-color: #5e7a62;
-  width: 60vw;
+  background-color: #4d8f58 !important;
+  width: 18em;
+  letter-spacing: 0.20em;
 }
 
 .mailIcon {
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .button:hover {
-  background-color: #516854;
+  background-color: #386840 !important;
 }
 
 @media (min-width: 480px) {
@@ -76,10 +95,6 @@
 
   .picture {
     width: 50vw;
-  }
-  .button {
-    background-color: #5e7a62;
-    width: 40vw;
   }
 }
 
@@ -96,12 +111,6 @@
   .picture {
     width: 25vw;
   }
-
-  .button {
-    background-color: #5e7a62;
-    width: 30vw;
-  }
-
 }
 
 @media (min-width: 1024px) {
@@ -113,10 +122,5 @@
   .details {
     left: var(--size-gutter);
     padding: var(--space-3xl) var(--size-gutter) 0 0;
-  }
-
-  .button {
-    background-color: #5e7a62;
-    width: 20vw;
   }
 }
