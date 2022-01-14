@@ -61,6 +61,10 @@
   width: 60vw;
 }
 
+.mailIcon {
+  margin-right: 8px;
+}
+
 .button:hover {
   background-color: #516854;
 }
@@ -94,6 +98,7 @@
   }
 
   .button {
+    background-color: #5e7a62;
     width: 30vw;
   }
 
