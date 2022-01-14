@@ -77,7 +77,7 @@
 .button {
   background-color: #4d8f58 !important;
   width: 18em;
-  letter-spacing: 0.20em;
+  letter-spacing: 0.24em !important;
 }
 
 .mailIcon {

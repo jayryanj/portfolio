@@ -35,14 +35,28 @@
   border-bottom-color: #45804f;
   border-bottom-width: 2px;
   text-decoration: none;
-  animation: hov 0.35s
+  animation: hov 0.36s
 }
 
-@keyframes hov {
+/*@keyframes hov {
   0%    {border-bottom-width: 10px;}
   25%   {border-bottom-width: 8px;}
   50%   {border-bottom-width: 6px;}
   75%   {border-bottom-width: 4px;}
+  100%  {border-bottom-width: 2px;}
+}*/
+
+@keyframes hov {
+  0%    {border-bottom-width: 0px;}
+  10%   {border-bottom-width: 2px;}
+  20%   {border-bottom-width: 4px;}
+  30%   {border-bottom-width: 6px;}
+  40%   {border-bottom-width: 8px;}
+  50%   {border-bottom-width: 10px;}
+  60%   {border-bottom-width: 8px;}
+  70%   {border-bottom-width: 6px;}
+  80%   {border-bottom-width: 4px;}
+  90%   {border-bottom-width: 2px;}
   100%  {border-bottom-width: 2px;}
 }
 
