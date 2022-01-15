@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import * as styles from '../styles/navigation.module.css'
 
@@ -21,9 +22,9 @@ const Navigation = () => (
       </li>
       
       <li className={styles.navigationItem}>
-        <Link to="/#about" activeClassName='active'>
+        <AnchorLink to="/#about" activeClassName='active'>
           About
-        </Link>
+        </AnchorLink>
       </li>
 
       <li className={styles.navigationItem}>
