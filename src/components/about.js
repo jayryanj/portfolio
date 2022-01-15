@@ -9,16 +9,26 @@ const About = () => {
     return(
         <div className={styles.about} id="about">
             <Grid container spacing={2}>
-                <Grid item md={7} sm={12} xs={12}>
+                
+                <Grid item md={5} sm={12} xs={12}>
                     <Container>
                         <div className={styles.leftColumn}>
+                            <StaticImage className={styles.picture} src="../images/portrait_small.jpg" alt="Jay"/>
+                        </div>
+                        
+                    </Container>
+                </Grid>
+
+                <Grid item md={7} sm={12} xs={12}>
+                    <Container>
+                        <div className={styles.rightColumn}>
                             <h2 className={styles.header}>
                                 About Me
                             </h2>
                             <h3 className={styles.name}>
                                 Jay Ryan Jamorabon
                             </h3>
-                            <div>
+                            <div className={styles.description}>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                     
@@ -33,14 +43,7 @@ const About = () => {
 
                     </Container>
                 </Grid>
-                <Grid item md={5} sm={12} xs={12}>
-                    <Container>
-                        <div className={styles.rightColumn}>
-                            <StaticImage className={styles.picture} src="../images/portrait_small.jpg" alt="Jay"/>
-                        </div>
-                        
-                    </Container>
-                </Grid>
+
             </Grid>
         </div>
     );

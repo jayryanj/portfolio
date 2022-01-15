@@ -7,20 +7,35 @@
 }
 
 /* Left column */
-.leftColumn {
+.rightColumn {
+    margin: 5em;
 }
 
 .header {
     font-size: 4em;
     margin: 0px;
+    color: #324e37;
 }
 
 .name {
     font-size: 1.75em;
+    color: #45804f;
+}
+
+@media (max-width: 768px) {
+    .rightColumn {
+        margin: 0;
+    }
+    .header {
+        font-size: 3em;
+    }
+    .name {
+        font-size: 1.65em;
+    }
 }
 
 /* Right column */
-.rightColumn {
+.leftColumn {
 }
 
 .picture {
