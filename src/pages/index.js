@@ -4,8 +4,8 @@ import get from 'lodash/get'
 
 import Layout from '../components/layout'
 import Hero from '../components/hero'
-import About from "../components/about"
 import ArticlePreview from '../components/article-preview'
+import About from "../components/about"
 
 class RootIndex extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Hero/>
-        <ArticlePreview posts={posts} />
+        <About className="#about" />
       </Layout>
     )
   }

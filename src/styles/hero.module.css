@@ -43,7 +43,7 @@
 }
 
 .angleBracket {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 @keyframes blink {
@@ -80,6 +80,7 @@
   letter-spacing: 0.24em !important;
 }
 
+/* Remove */
 .mailIcon {
   margin-right: 6px;
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Container, Button } from '@mui/material';
-import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 
 import * as styles from '../styles/hero.module.css'
 
