@@ -6,7 +6,7 @@
     margin: 2em;
 }
 
-/* Left column */
+/* Right column */
 .rightColumn {
     margin: 5em;
 }
@@ -20,6 +20,13 @@
 .name {
     font-size: 1.75em;
     color: #45804f;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.description {
+    margin-top: 2.5em;
+    line-height: 2.1em;
 }
 
 @media (max-width: 768px) {
@@ -34,12 +41,20 @@
     }
 }
 
-/* Right column */
+/* Left column */
 .leftColumn {
+    text-align: center;
 }
 
 .picture {
     border-radius: 50%;
+    width: 25vw;
+}
+
+@media (max-width: 768px) {
+    .picture {
+        width: 50vw;
+    }
 }
 
 
