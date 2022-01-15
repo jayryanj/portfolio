@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Container, Button } from '@mui/material';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 import * as styles from '../styles/hero.module.css'
 
@@ -9,7 +10,7 @@ const Hero = () => {
         <div className={styles.hero}>
             <Container>
 
-                <StaticImage className={styles.picture} src="../images/cartoon_portrait_new.png" alt="Jay"/>
+                <StaticImage className={styles.picture} src="../images/cartoon_portrait_new.png" alt="Cartoon Portrait"/>
 
                 <div className={styles.divider}></div>
 
@@ -24,7 +25,8 @@ const Hero = () => {
                 <div className={styles.divider}></div>
 
                 <Button className={styles.button} variant="contained">
-                    About Me
+                    <MailOutlineIcon className={styles.mailIcon}/>
+                    Contact Me
                 </Button>
 
             </Container>

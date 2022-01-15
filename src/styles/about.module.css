@@ -1,7 +1,30 @@
-.container {
+.about {
     background-color: white;
+    padding: 3em;
+}
+.leftColumn, .rightColumn {
+    margin: 2em;
 }
 
-.grid {
-    background-color: green;
+/* Left column */
+.leftColumn {
 }
+
+.header {
+    font-size: 4em;
+    margin: 0px;
+}
+
+.name {
+    font-size: 1.75em;
+}
+
+/* Right column */
+.rightColumn {
+}
+
+.picture {
+    border-radius: 50%;
+}
+
+
