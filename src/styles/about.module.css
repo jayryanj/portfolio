@@ -11,6 +11,14 @@
     margin: 5em;
 }
 
+.divider {
+    width: 5rem;
+    height: 0.30rem;
+    background-color: #4d8f58;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+  }
+
 .header {
     font-size: 4em;
     margin: 0px;

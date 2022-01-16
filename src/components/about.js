@@ -22,6 +22,7 @@ const About = () => {
                 <Grid item md={7} sm={12} xs={12}>
                     <Container>
                         <div className={styles.rightColumn}>
+                            <div className={styles.divider}></div>
                             <h2 className={styles.header}>
                                 About Me
                             </h2>
@@ -38,9 +39,7 @@ const About = () => {
                                     Bibendum arcu vitae elementum curabitur vitae. Convallis a cras semper auctor. Ultricies mi eget mauris pharetra et ultrices neque ornare. Penatibus et magnis dis parturient montes nascetur ridiculus. Pretium viverra suspendisse potenti nullam ac tortor vitae. Interdum velit laoreet id donec. Enim sed faucibus turpis in eu mi.
                                 </p>
                             </div>
-
                         </div>
-
                     </Container>
                 </Grid>
 
