@@ -24,7 +24,7 @@ const About = () => {
                         <div className={styles.rightColumn}>
                             <div className={styles.divider}></div>
                             <h2 className={styles.header}>
-                                About Me
+                                About
                             </h2>
                             <h3 className={styles.name}>
                                 Jay Ryan Jamorabon

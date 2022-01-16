@@ -20,7 +20,7 @@
   }
 
 .header {
-    font-size: 4em;
+    font-size: 4.4em;
     margin: 0px;
     color: #324e37;
 }
@@ -55,7 +55,7 @@
 }
 
 .picture {
-    border-radius: 50%;
+    border-radius: 25%;
     width: 25vw;
 }
 
