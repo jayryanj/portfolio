@@ -52,5 +52,11 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: `src/images/cartoon_portrait_new.png`
+      }
+    }
   ],
 };
