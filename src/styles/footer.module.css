@@ -15,3 +15,15 @@
   border-bottom-color: var(--primary);
   color: var(--primary);
 }
+
+.footer {
+  letter-spacing: 0.08em;
+  background-color: #203123;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.text {
+  
+}
