@@ -1,45 +1,58 @@
-.container {
-  border-top: 1px solid var(--border);
-  font-size: var(--text-sm);
-  margin-top: var(--space-2xl);
-  padding: var(--space-2xl) 0;
-  text-align: right;
-}
-
-.container a {
-  border-bottom: 1.5px solid transparent;
-  font-weight: var(--medium);
-}
-
-.container a:hover {
-  border-bottom-color: var(--primary);
-  color: var(--primary);
-}
-
 .footer {
   letter-spacing: 0.08em;
   background-color: #233626;
-  color: white;
+  color: #91aa96;
   font-size: 1em;
+  text-align: center;
+}
+
+.logo {
+  width: 5.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.quote {
+  font-size: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .social {
+  justify-content: center;
+  margin: 1em auto;
   display: flex;
   list-style: none;
-  margin: 0;
-  gap: 1em;
-  justify-content: right;
-  text-align: right;
+  gap: 1.5em;
+  padding: 0 !important;
+  list-style-type: none;
 }
 
 .socialItem {
   text-decoration: none;
 }
 
-/* Top Row */
-.topRow {
-  text-align: center;
+.socialIcon {
+  font-size: 2.8em !important;
 }
-.logo {
-  width: 5.5em;
+
+.copyright {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 0.9em;
 }
+
+.madeWith {
+  margin-top: 2em;
+  margin-bottom: 3.8em;
+  color: #d4d4d4;
+  font-size: 0.8em;
+}
+
+.gatsbyLogo {
+  width: 6em;
+}
+
+
+
+
