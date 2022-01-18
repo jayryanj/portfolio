@@ -7,7 +7,7 @@ import * as styles from '../styles/hero.module.css'
 
 const Hero = () => {
     return(
-        <div data-sal="slide-up" className={styles.hero}>
+        <div data-sal="fade" className={styles.hero}>
             <Container>
 
                 <StaticImage className={styles.picture} src="../images/cartoon_portrait_new.png" alt="Cartoon Portrait"/>
