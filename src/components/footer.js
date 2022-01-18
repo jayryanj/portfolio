@@ -13,7 +13,7 @@ const Footer = () => (
     <div className={styles.footer}>
         <Container as="footer">
             <StaticImage className={styles.logo} src="../images/cartoon_portrait_new.png" alt="Jay"/>
-            <p className={styles.quote}>"Never stop learning <br/>because life never stops teaching"</p>
+            <p className={styles.quote}>"Never stop learning, <br/>because life never stops teaching."</p>
             <p>
                 <ul className={styles.social}>
                     <li className={styles.socialItem}>

@@ -3,7 +3,6 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import * as styles from "../styles/about.module.css";
-import Layout from "./layout";
 
 const About = () => {
     return(
@@ -19,7 +18,7 @@ const About = () => {
                     </Container>
                 </Grid>
 
-                <Grid data-sal="slide-up" item md={7} sm={12} xs={12}>
+                <Grid item md={7} sm={12} xs={12}>
                     <Container>
                         <div className={styles.rightColumn}>
                             <div className={styles.divider}></div>
@@ -29,7 +28,7 @@ const About = () => {
                             <h3 className={styles.name}>
                                 Jay Ryan Jamorabon
                             </h3>
-                            <div className={styles.description}>
+                            <div data-sal="slide-up" className={styles.description}>
                                 <p>
                                     I'm a <strong>software developer</strong> from the islands of <strong>Hawai'i</strong>.
                                 </p>
@@ -37,7 +36,7 @@ const About = () => {
                                     I love to work with technology to build software and solve difficult problems. I'm the happiest at the beach or in front of a computer screen. I'm currently focused on learning web and mobile development.
                                 </p>
                                 <p>
-                                    I recently graduated from the <strong>University of Hawai'i at Mānoa</strong> with a <strong>Bachelor of Science</strong> in <strong>Computer Science</strong>
+                                    I recently graduated from the <strong>University of Hawai'i at Mānoa</strong> with a Bachelor of Science in <strong>Computer Science</strong>
                                 </p>
                             </div>
                         </div>

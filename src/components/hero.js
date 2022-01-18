@@ -24,10 +24,13 @@ const Hero = () => {
 
                 <div className={styles.divider}></div>
 
-                <Button className={styles.button} variant="contained">
-                    <MailOutlineIcon className={styles.mailIcon}/>
-                    Contact Me
-                </Button>
+                <a target="_blank" rel="noreferrer" href="mailto:jayrjamorabon@gmail.com">
+                    <Button className={styles.button} variant="contained">
+                        <MailOutlineIcon className={styles.mailIcon}/>
+                        Contact Me
+                    </Button>
+                </a>
+
 
             </Container>
         </div>
