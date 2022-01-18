@@ -31,10 +31,13 @@ const About = () => {
                             </h3>
                             <div className={styles.description}>
                                 <p>
-                                    I'm a software developer from the islands of Hawai'i.
+                                    I'm a <strong>software developer</strong> from the islands of <strong>Hawai'i</strong>.
                                 </p>
                                 <p>
-                                    I love to work with technology to build software and solve difficult problems. I'm currently focused on learning web and mobile development.
+                                    I love to work with technology to build software and solve difficult problems. I'm the happiest at the beach or in front of a computer screen. I'm currently focused on learning web and mobile development.
+                                </p>
+                                <p>
+                                    I recently graduated from the <strong>University of Hawai'i at Mānoa</strong> with a <strong>Bachelor of Science</strong> in <strong>Computer Science</strong>
                                 </p>
                             </div>
                         </div>
@@ -42,6 +45,11 @@ const About = () => {
                 </Grid>
 
             </Grid>
+
+            <p>
+                Lorem ipsum
+            </p>
+
         </div>
     );
 }

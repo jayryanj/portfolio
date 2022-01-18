@@ -38,6 +38,10 @@
     font-size: 1.4em;
 }
 
+strong {
+    color: #30a343;
+}
+
 @media (max-width: 768px) {
     .rightColumn {
         margin: 0;
