@@ -48,6 +48,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-material-ui",
     "gatsby-plugin-anchor-links",
+    "gatsby-plugin-scroll-reveal",
     {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,

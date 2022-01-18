@@ -19,7 +19,7 @@ const About = () => {
                     </Container>
                 </Grid>
 
-                <Grid item md={7} sm={12} xs={12}>
+                <Grid data-sal="slide-up" item md={7} sm={12} xs={12}>
                     <Container>
                         <div className={styles.rightColumn}>
                             <div className={styles.divider}></div>
