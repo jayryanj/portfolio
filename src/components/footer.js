@@ -3,7 +3,6 @@ import Container from './container'
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { Grid } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
@@ -28,7 +27,7 @@ const Footer = () => (
                         </Link>
                     </li>
                     <li className={styles.socialItem}>
-                        <a target="_blank" href="mailto:jayrjamorabon@gmail.com">
+                        <a target="_blank" rel="noreferrer" href="mailto:jayrjamorabon@gmail.com">
                             <MailOutlinedIcon className={styles.socialIcon} />
                         </a>
                     </li>
