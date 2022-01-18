@@ -7,7 +7,7 @@ import * as styles from '../styles/hero.module.css'
 
 const Hero = () => {
     return(
-        <div data-sal="fade" className={styles.hero}>
+        <div className={styles.hero}>
             <Container>
 
                 <StaticImage className={styles.picture} src="../images/cartoon_portrait_new.png" alt="Cartoon Portrait"/>
@@ -19,7 +19,7 @@ const Hero = () => {
                 </h1>
 
                 <p className={styles.description}>
-                    I'm a Software Engineer from Hawai'i.
+                    I'm a Software Developer from Hawai'i.
                 </p>
 
                 <div className={styles.divider}></div>

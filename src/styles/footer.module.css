@@ -35,3 +35,11 @@
 .socialItem {
   text-decoration: none;
 }
+
+/* Top Row */
+.topRow {
+  text-align: center;
+}
+.logo {
+  width: 5.5em;
+}

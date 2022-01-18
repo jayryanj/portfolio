@@ -46,9 +46,9 @@ const About = () => {
 
             </Grid>
 
-            <p>
-                Lorem ipsum
-            </p>
+            <Container>
+                My Toolbox:
+            </Container>
 
         </div>
     );

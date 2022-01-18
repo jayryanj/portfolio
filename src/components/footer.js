@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from './container'
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image'
 
 import { Grid } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -11,9 +12,13 @@ const Footer = () => (
     <div className={styles.footer}>
         <Container as="footer">
             <Grid container>
+                <Grid className={styles.topRow} item sm={12} md={12}>
+                    <StaticImage className={styles.logo} src="../images/cartoon_portrait_new.png" alt="Jay"/>
+                    <p>Play and Learn</p>
+                </Grid>
                 <Grid item md={6} sm={12}>
                     <p className={styles.text}>
-                        Copyright &#169;{new Date().getFullYear()} Jay Ryan Jamorabon
+                        Created by Jay &#169; {new Date().getFullYear()}
                     </p>
                 </Grid>
                 <Grid item md={6} sm={12}>
@@ -40,6 +45,6 @@ const Footer = () => (
         </Container>
     </div>
 
-)
+);
 
 export default Footer
