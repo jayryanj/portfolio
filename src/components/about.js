@@ -31,12 +31,10 @@ const About = () => {
                             </h3>
                             <div className={styles.description}>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    
-                                    
+                                    I'm a software developer from the islands of Hawai'i.
                                 </p>
                                 <p>
-                                    Bibendum arcu vitae elementum curabitur vitae. Convallis a cras semper auctor. Ultricies mi eget mauris pharetra et ultrices neque ornare. Penatibus et magnis dis parturient montes nascetur ridiculus. Pretium viverra suspendisse potenti nullam ac tortor vitae. Interdum velit laoreet id donec. Enim sed faucibus turpis in eu mi.
+                                    I love to work with technology to build software and solve difficult problems. I'm currently focused on learning web and mobile development.
                                 </p>
                             </div>
                         </div>
