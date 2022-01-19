@@ -18,6 +18,7 @@ const About = () => {
         "Gatsby",
         "MongoDB",
         "Headless CMS",
+        "RESTful APIs",
         "Git",
         "GitHub",
         "AEM",
