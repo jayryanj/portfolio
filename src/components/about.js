@@ -15,6 +15,7 @@ const About = () => {
         "Node.js",
         "React",
         "Bootstrap",
+        "Material UI",
         "Gatsby",
         "MongoDB",
         "Headless CMS",
@@ -22,7 +23,6 @@ const About = () => {
         "Git",
         "GitHub",
         "AEM",
-        "VS Code"
     ]
 
     return(
