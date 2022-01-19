@@ -12,19 +12,19 @@ const Hero = () => {
 
                 <StaticImage className={styles.picture} src="../images/cartoon_portrait_new.png" alt="Cartoon Portrait"/>
 
-                <div className={styles.divider}></div>
+                <div data-sal="slide-left" data-sal-delay="1000" className={styles.divider}></div>
 
-                <h1 className={styles.aloha}>
+                <h1 data-sal="slide-up" className={styles.aloha}>
                     <span className={styles.angleBracket}>&#62;</span> Aloha, I'm Jay.
                 </h1>
 
-                <p className={styles.description}>
+                <p data-sal="slide-up" data-sal-delay="300" className={styles.description}>
                     I'm a Software Engineer from Hawai'i.
                 </p>
 
-                <div className={styles.divider}></div>
+                <div data-sal="slide-right" data-sal-delay="1000" className={styles.divider}></div>
 
-                <a target="_blank" rel="noreferrer" href="mailto:jayrjamorabon@gmail.com">
+                <a data-sal="slide-up" data-sal-delay="600" target="_blank" rel="noreferrer" href="mailto:jayrjamorabon@gmail.com">
                     <Button className={styles.button} variant="contained">
                         <MailOutlineIcon className={styles.mailIcon}/>
                         Contact Me

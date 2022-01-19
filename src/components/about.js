@@ -69,7 +69,7 @@ const About = () => {
                 <p className={styles.toolsDescription}>
                     Here are a few technologies that I've been working with recently:
                 </p>
-                <ul className={styles.tools}>
+                <ul data-sal="slide-up" className={styles.tools}>
                     {tools.map((tool) => <li className={styles.toolItem}>{tool}</li>)}
                 </ul>
 
