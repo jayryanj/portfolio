@@ -19,7 +19,7 @@ const Hero = () => {
                 </h1>
 
                 <p className={styles.description}>
-                    I'm a Software Developer from Hawai'i.
+                    I'm a Software Engineer from Hawai'i.
                 </p>
 
                 <div className={styles.divider}></div>

@@ -1,10 +1,28 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Divider, Grid } from "@mui/material";
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import * as styles from "../styles/about.module.css";
 
 const About = () => {
+    const tools = [
+        "JavaScript",
+        "HTML",
+        "Java",
+        "Python",
+        "Spring",
+        "Node.js",
+        "React",
+        "Bootstrap",
+        "Gatsby",
+        "MongoDB",
+        "Headless CMS",
+        "Git",
+        "GitHub",
+        "AEM",
+        "VS Code"
+    ]
+
     return(
         <div className={styles.about} id="about">
             <Grid container spacing={2}>
@@ -30,13 +48,10 @@ const About = () => {
                             </h3>
                             <div data-sal="slide-up" className={styles.description}>
                                 <p>
-                                    I'm a <strong>software developer</strong> from the islands of <strong>Hawai'i</strong>.
+                                <strong>Aloha! My name is Jay</strong>. I'm a <strong>software developer</strong> and a recent college graduate from the islands of <strong>Hawai'i</strong>.
                                 </p>
                                 <p>
-                                    I love to work with technology to build software and solve difficult problems. I'm the happiest at the beach or in front of a computer screen. I'm currently focused on learning web and mobile development.
-                                </p>
-                                <p>
-                                    I recently graduated from the <strong>University of Hawai'i at Mānoa</strong> with a Bachelor of Science in <strong>Computer Science</strong>
+                                    My interest in coding started in the seventh grade with my very first "Hello, world!" in C. Now, my interest has spiraled into a passion for developing applications and solving problems with technology.
                                 </p>
                             </div>
                         </div>
@@ -45,23 +60,23 @@ const About = () => {
 
             </Grid>
 
-            <Container>
-                My Toolbox:
+            <Container className={styles.toolsContainer}>
+                <Divider>
+                    <h2 className={`${styles.header} ${styles.toolsHeader}`}>
+                        My Toolbox
+                    </h2>
+                </Divider>
+                <p className={styles.toolsDescription}>
+                    Here are a few technologies that I've been working with recently:
+                </p>
+                <ul className={styles.tools}>
+                    {tools.map((tool) => <li className={styles.toolItem}>{tool}</li>)}
+                </ul>
+
             </Container>
 
         </div>
     );
 }
-
-/**
- * <Container maxWidth={false} className={styles.container}>
-                <p>
-                    About Me
-                </p>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a placerat libero, sit amet gravida augue. Aenean eros enim, laoreet sit amet ex ac, efficitur tincidunt massa. Vestibulum consectetur enim egestas pretium vulputate. Pellentesque mi libero, fringilla ultrices felis id, dapibus aliquet elit. Pellentesque sodales augue id diam finibus aliquet. Etiam auctor, ipsum et egestas ornare, sem turpis viverra erat, et rhoncus augue sapien efficitur odio. Integer ut scelerisque eros. Mauris et nulla lorem. Maecenas vitae consequat lacus. Vivamus non purus nulla. Quisque fermentum sapien non pharetra porttitor. Morbi fringilla, dolor placerat facilisis consectetur, tortor velit placerat leo, eget viverra quam risus tempus sem.
-                </p>
-            </Container>
- */
 
 export default About;
