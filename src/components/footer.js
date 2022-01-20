@@ -17,14 +17,14 @@ const Footer = () => (
             <p>
                 <ul className={styles.social}>
                     <li className={styles.socialItem}>
-                        <Link target="_blank" to="https://github.com/jayryanj">
+                        <a target="_blank" href="https://github.com/jayryanj">
                             <GitHubIcon className={styles.socialIcon} />
-                        </Link>
+                        </a>
                     </li>
                     <li className={styles.socialItem}>
-                        <Link target="_blank" to="https://www.linkedin.com/in/jayryanjamorabon/">
+                        <a target="_blank" href="https://www.linkedin.com/in/jayryanjamorabon/">
                             <LinkedInIcon className={styles.socialIcon} />
-                        </Link>
+                        </a>
                     </li>
                     <li className={styles.socialItem}>
                         <a target="_blank" rel="noreferrer" href="mailto:jayrjamorabon@gmail.com">
