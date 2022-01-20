@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react'
+import { Link } from 'gatsby';
 
 import Layout from "../components/layout";
 
@@ -23,7 +24,9 @@ const Projects = () => {
             <ul>
                 {data.allContentfulProject.nodes.map((project) => 
                     <li>
-                        <h2>{project.name}</h2>
+                        <Link to={`/projects/${project.slug}`}>
+                            <h2>{project.name}</h2>
+                        </Link>
                         <p>{project.summary.summary}</p>
                     </li>
                 )}
