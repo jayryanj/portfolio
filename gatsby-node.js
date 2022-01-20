@@ -5,6 +5,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Define a template for blog post
   const blogPost = path.resolve('./src/templates/blog-post.js')
+  const projectTemplate = path.resolve('./src/templates/project.js')
 
   const result = await graphql(
     `
@@ -19,6 +20,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
   )
 
+  const projectResult = await graphql(`
+    query {
+      allContentfulProject {
+        nodes {
+          name
+          slug
+        }
+      }
+    }
+  `)
+
   if (result.errors) {
     reporter.panicOnBuild(
       `There was an error loading your Contentful posts`,
@@ -28,6 +40,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const posts = result.data.allContentfulBlogPost.nodes
+  const projects = projectResult.data.allContentfulProject.nodes;
 
   // Create blog posts pages
   // But only if there's at least one blog post found in Contentful
@@ -50,4 +63,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+  
+    if (projects.length > 0) {
+        projects.forEach((project, index) => {
+            createPage({
+                path: `/projects/${project.slug}`,
+                component: projectTemplate,
+                context: {
+                    slug: project.slug
+                }
+            });
+            console.log(`Created page for ${project.slug}`)
+        })
+    }
 }
