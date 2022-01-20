@@ -1,0 +1,55 @@
+.preview {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: right;
+    margin-bottom: 1em;
+}
+h3, h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #324e37;
+}
+
+h3 {
+    font-size: 0.85em;
+    color: #45804f;
+    font-weight: 400;
+}
+
+
+.coverImage {
+    width: 35em;
+    border-radius: 2%;
+    filter: brightness(70%);
+    z-index: 0;
+}
+
+.coverImage:hover {
+    filter: none;
+    animation: hoverImage 0.25s;
+}
+
+@keyframes hoverImage {
+    0% {filter: brightness(70%);}
+    100% {filter: none;}
+}
+
+.details {
+    width: 25em;
+    z-index: 1;
+}
+
+.card {
+    max-width: 30em;
+    margin-left: -5em;
+    background-color: #eef7ef;
+}

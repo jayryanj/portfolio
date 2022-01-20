@@ -1,36 +1,45 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react'
 import { Link } from 'gatsby';
+import { Container } from '@mui/material';
 
 import Layout from "../components/layout";
+import ProjectPreview from '../components/project-preview';
+
+import * as styles from "../styles/projects.module.css";
 
 const Projects = () => {
     const data = useStaticQuery(graphql`
     query MyQuery {
         allContentfulProject(sort: {fields: date, order: DESC}) {
-        nodes {
+          nodes {
             name
             slug
             summary {
-            summary
+              summary
             }
             date
+            coverImage {
+              file {
+                url
+              }
+            }
+          }
         }
-        }
-    }
+      }
 `)
     return(
         <Layout>
-            <ul>
-                {data.allContentfulProject.nodes.map((project) => 
-                    <li>
-                        <Link to={`/projects/${project.slug}`}>
-                            <h2>{project.name}</h2>
-                        </Link>
-                        <p>{project.summary.summary}</p>
-                    </li>
-                )}
-            </ul>
+            <Container>
+                <h1>Some Things I've worked on</h1>
+                <ul className={styles.projectList}>
+                    {data.allContentfulProject.nodes.map((project) => 
+                        <li className={styles.projectListItem}>
+                            <ProjectPreview project={project}/>
+                        </li>
+                    )}
+                </ul>
+            </Container>
         </Layout>
     );
 }
