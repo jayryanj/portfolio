@@ -18,7 +18,6 @@ const Projects = () => {
         }
     }
 `)
-    console.log(data.allContentfulProject.nodes[0]);
     return(
         <Layout>
             <ul>
