@@ -124,7 +124,7 @@ strong {
         transform: scale(1.2);
     }
     100% {
-        background-color: white; color: #4d8f58;
+        color: #4d8f58;
         box-shadow: none;
         transform: scale(1);
     }
@@ -132,7 +132,7 @@ strong {
 
 @keyframes toolHover {
     0% {
-        background-color: white; color: #4d8f58;
+        color: #4d8f58;
         box-shadow: none;
         transform: scale(1);
     }

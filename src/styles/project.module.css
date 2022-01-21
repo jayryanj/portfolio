@@ -79,6 +79,38 @@
     border-radius: 6px;
     font-size: 1.5em;
     letter-spacing: 0.1em;
+    animation: techNotHover 0.13s;
+}
+
+.techItem:hover {
+    box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.3);
+    animation: techHover 0.13s;
+    animation-iteration-count: 1;
+    transform: scale(1.15);
+}
+
+@keyframes techNotHover {
+    0% {
+        box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.3);
+        transform: scale(1.15);
+    }
+    100% {
+        color: #4d8f58;
+        box-shadow: none;
+        transform: scale(1);
+    }
+}
+
+@keyframes techHover {
+    0% {
+        color: #4d8f58;
+        box-shadow: none;
+        transform: scale(1);
+    }
+    100% {
+        box-shadow: 0px 5px 15px -1px rgba(0,0,0,0.3);
+        transform: scale(1.2);
+    }
 }
 
 @media (max-width: 900px) {

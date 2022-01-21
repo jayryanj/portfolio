@@ -40,7 +40,11 @@ const ProjectTemplate = (props) => {
 
                     <h2 className={styles.header2}>Technologies</h2>
                     <ul className={`${styles.tags} ${styles.technologies}`}>
-                        {project.technologies !== null ? (project.technologies.map((tech) => <li className={`${styles.tagItem} ${styles.techItem}`}>{tech}</li>)) : null}
+                        { project.technologies !== null ?
+                         (project.technologies.map((tech) => <li className={`${styles.tagItem} ${styles.techItem}`}>{tech}</li>)) 
+                        :
+                          null
+                        }
                     </ul>
                 </Container>
             </div>
