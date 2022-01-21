@@ -3,16 +3,6 @@
   margin-bottom: 10vw;
 }
 
-.image {
-  /*
-    Ensure golden ratio for the hero size while limiting it to some extend to
-    the viewport width
-  */
-  height: 61.8vh;
-  max-height: 560px;
-  width: 100%;
-}
-
 .picture {
   width: 75vw;
   margin: auto;
@@ -73,12 +63,6 @@
   font-size: var(--text-lead);
   font-weight: var(--semibold);
   margin: 0;
-}
-
-.button {
-  background-color: #4d8f58 !important;
-  width: 18em;
-  letter-spacing: 0.24em !important;
 }
 
 .socials {

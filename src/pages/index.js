@@ -4,7 +4,6 @@ import get from 'lodash/get'
 
 import Layout from '../components/layout'
 import Hero from '../components/hero'
-import ArticlePreview from '../components/article-preview'
 import About from "../components/about"
 
 class RootIndex extends React.Component {

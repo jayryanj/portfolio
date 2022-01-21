@@ -25,7 +25,7 @@ const ProjectPreview = (props) => {
                     <p className={styles.summary}>{project.summary.summary}</p>
 
                     <ul className={styles.tags}>
-                        {project.tags.map((tag) => <li className={styles.tagItem}>{tag}</li>)}
+                        {project.tags !== null ? project.tags.map((tag) => <li className={styles.tagItem}>{tag}</li>) : null}
                      </ul>
 
                 </Grid>
