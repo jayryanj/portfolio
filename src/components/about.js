@@ -52,8 +52,11 @@ const About = () => {
                                 <p data-sal="slide-up">
                                 <strong>Aloha! My name is Jay</strong>. I'm a <strong>software engineer</strong> and a recent college graduate from the islands of <strong>Hawai'i</strong>.
                                 </p>
-                                <p data-sal="slide-up" data-sal-delay="300">
+                                <p data-sal="slide-up" data-sal-delay="200">
                                     My interest in coding started in the seventh grade with my very first "Hello, world!" in C. Now, my interest has spiraled into a passion for developing applications and solving problems with technology.
+                                </p>
+                                <p data-sal="slide-up" data-sal-delay="400">
+                                    I love coding, security, space, and the beach!
                                 </p>
                             </div>
                         </div>

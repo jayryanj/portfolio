@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { Card, CardContent } from '@mui/material';
+import { Button, Card, CardContent, Grid } from '@mui/material';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import * as styles from "../styles/project-preview.module.css"
 
@@ -11,33 +12,38 @@ const ProjectPreview = (props) => {
     console.log(`https:${project.coverImage.file.url}`);
 
     return(
-        <div className={styles.preview}>
-            <Link to={`/projects/${project.slug}`}>
-                <img className={styles.coverImage} src={`https:${project.coverImage.file.url}`} alt="pic" />
-            </Link>
+        <div className={styles.projectPreview}>
+            <Grid container spacing={6}>
 
-            <div className={styles.details}>
+                <Grid item sm={12} md={7}>
+                    <Link to={`/projects/${project.slug}`}>
+                        <img className={styles.coverImage} src={`https:${project.coverImage.file.url}`} alt="pic" />
+                    </Link>
+                </Grid>
 
-                <div className={styles.heading}>
-                    <h3>Project</h3>
-                    <h2>
-                        <Link className={styles.headerLink} to={`/projects/${project.slug}`}>
-                            {project.name}
-                        </Link>
+                <Grid className={styles.rightColumn} item sm={12} md={5}>
+
+                    <h2 className={styles.name}>
+                        <Link to={`/projects/${project.slug}`}>{project.name}</Link>
                     </h2>
-                    
-                </div>
+                    <p className={styles.summary}>{project.summary.summary}</p>
 
-                <Card className={styles.card}>
-                    <CardContent>
-                        <p>{project.summary.summary}</p>
-                    </CardContent>
-                </Card>
+                    <ul className={styles.tags}>
+                        {project.tags.map((tag) => <li className={styles.tagItem}>{tag}</li>)}
+                     </ul>
 
-            </div>
+                </Grid>
 
+            </Grid>
         </div>
     );
 }
 
 export default ProjectPreview;
+/**
+                     <Link to={`/projects/${project.slug}`}>
+                        <Button className={styles.button} variant="contained">
+                            View Details
+                        </Button>
+                    </Link>
+ */
