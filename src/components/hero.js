@@ -3,6 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import { Container, Button } from '@mui/material';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import Socials from './socials';
 
 import * as styles from '../styles/hero.module.css'
 
@@ -25,13 +26,9 @@ const Hero = () => {
 
                 <div data-sal="slide-right" data-sal-delay="1000" className={styles.divider}></div>
 
-                <a data-sal="slide-up" data-sal-delay="600" target="_blank" rel="noreferrer" href="mailto:jayrjamorabon@gmail.com">
-                    <Button className={styles.button} variant="contained">
-                        <MailOutlineIcon className={styles.mailIcon}/>
-                        Contact Me
-                    </Button>
-                </a>
-
+                <div data-sal="slide-up" data-sal-delay="600" className={styles.socials}>
+                    <Socials />
+                </div>
 
             </Container>
         </div>

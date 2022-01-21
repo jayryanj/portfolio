@@ -81,13 +81,8 @@
   letter-spacing: 0.24em !important;
 }
 
-/* Remove */
-.mailIcon {
-  margin-right: 6px;
-}
-
-.button:hover {
-  background-color: #386840 !important;
+.socials {
+  color: #324e37;
 }
 
 @media (min-width: 480px) {
