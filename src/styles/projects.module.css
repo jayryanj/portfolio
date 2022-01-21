@@ -1,12 +1,17 @@
 .projects {
-margin-top: 3vh;
-margin: 3vh 5vw
+    padding-top: 3vh;
+    padding: 3vh 5vw;
+    background-color: white;
+}
+
+.headerDivider {
+    margin-top: 4em;
 }
 
 .header {
     font-size: 3.5em;
-    margin: 0px;
     color: #324e37;
+    margin: 0 !important;
 }
 
 .subHeader {

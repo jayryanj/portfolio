@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
+
 import { Container, Button } from '@mui/material';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 

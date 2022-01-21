@@ -1,18 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { Button, Card, CardContent, Grid } from '@mui/material';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Grid } from '@mui/material';
 
 import * as styles from "../styles/project-preview.module.css"
 
 const ProjectPreview = (props) => {
     const project = props.project;
-    const image = getImage()
-    console.log(`https:${project.coverImage.file.url}`);
 
     return(
-        <div className={styles.projectPreview}>
+        <div className={styles.preview}>
             <Grid container spacing={6}>
 
                 <Grid item sm={12} md={7}>

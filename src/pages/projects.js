@@ -1,8 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react'
 import { Link } from 'gatsby';
-import { Container, Divider } from '@mui/material';
 
+import { Container, Divider } from '@mui/material';
 import Layout from "../components/layout";
 import ProjectPreview from '../components/project-preview';
 
@@ -33,7 +33,7 @@ const Projects = () => {
         <Layout>
           <div className={styles.projects}>
             <Container>
-                  <Divider textAlign='left'><h1 className={styles.header}>Projects</h1></Divider>
+                  <Divider className={styles.headerDivider}><h1 className={styles.header}>Projects</h1></Divider>
 
                   <ul className={styles.projectList}>
                       {data.allContentfulProject.nodes.map((project) => 
