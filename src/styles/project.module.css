@@ -61,9 +61,9 @@
 }
 
 .objective, .results {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #525252;
-    line-height: 2em;
+    line-height: 2.2em;
 }
 
 .technologies {
@@ -77,7 +77,7 @@
     border: 1px solid #4d8f58;
     padding: 0.4em;
     border-radius: 6px;
-    font-size: 1.5em;
+    font-size: 1.35em;
     letter-spacing: 0.1em;
     animation: techNotHover 0.13s;
 }
