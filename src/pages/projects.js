@@ -33,15 +33,20 @@ const Projects = () => {
         <Layout>
           <div className={styles.projects}>
             <Container>
-                  <Divider className={styles.headerDivider}><h1 className={styles.header}>Projects</h1></Divider>
+                    <Divider className={styles.headerDivider}><h1 className={styles.header}>Projects</h1></Divider>
 
-                  <ul className={styles.projectList}>
-                      {data.allContentfulProject.nodes.map((project) => 
-                          <li className={styles.projectListItem}>
-                              <ProjectPreview project={project}/>
-                          </li>
-                      )}
-                  </ul>
+                    {data !== null ? 
+                        <ul className={styles.projectList}>
+                        {data.allContentfulProject.nodes.map((project) => 
+                            <li className={styles.projectListItem}>
+                                <ProjectPreview project={project}/>
+                            </li>
+                            )}
+                      </ul>
+                    :
+                      <h2>Sorry! Looks like connection to the CMS is down.</h2>
+                    }
+
               </Container>
           </div>
         </Layout>

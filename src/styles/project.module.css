@@ -3,7 +3,7 @@
 }
 
 .projectContainer {
-    padding: 1em 10em !important;
+    padding: 1em 10em 6em !important;
 }
 
 .backIcon,.backButton p {
@@ -55,12 +55,12 @@
 }
 
 .header2 {
-    margin-top: 1em;
+    margin-top: 1.4em;
     font-size: 2.5em;
     color: #324e37;
 }
 
-.objective, .results {
+.objective, .results, .links {
     font-size: 1.2em;
     color: #525252;
     line-height: 2.2em;
@@ -87,6 +87,12 @@
     animation: techHover 0.13s;
     animation-iteration-count: 1;
     transform: scale(1.15);
+}
+
+.links {
+    list-style: none;
+    padding: 0 !important;
+    font-size: 1.4em;
 }
 
 @keyframes techNotHover {
@@ -116,5 +122,9 @@
 @media (max-width: 900px) {
     .projectContainer {
         padding: 2.2em !important;
+    }
+
+    .links {
+        font-size: 1em;
     }
 }
