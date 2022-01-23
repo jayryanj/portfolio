@@ -53,9 +53,9 @@ const ProjectTemplate = (props) => {
                             <ul className={styles.links}>
                                 {
                                     project.links.map((link) => 
-                                        <li className={styles.linkItem}>
+                                        <li>
                                             <a href={link} target="_blank" rel="noreferrer">
-                                            <span className={styles.angleBracket}>&#62;</span> {link}
+                                            <span>&#62;</span> {link}
                                             </a>
                                         </li>)
                                 }
