@@ -17,19 +17,6 @@ class RootIndex extends React.Component {
       </Layout>
     )
   }
-  /**
-   * 
-    render() {
-    const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
-
-    return (
-      <Layout location={this.props.location}>
-        <Hero/>
-        <ArticlePreview posts={posts} />
-      </Layout>
-    )
-  }
-   */
 }
 
 export default RootIndex

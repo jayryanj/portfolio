@@ -36,10 +36,3 @@ const ProjectPreview = (props) => {
 }
 
 export default ProjectPreview;
-/**
-                     <Link to={`/projects/${project.slug}`}>
-                        <Button className={styles.button} variant="contained">
-                            View Details
-                        </Button>
-                    </Link>
- */

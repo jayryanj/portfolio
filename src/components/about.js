@@ -56,7 +56,7 @@ const About = () => {
                                     My interest in coding started in the seventh grade with my very first "Hello, world!" in C. Now, my interest has spiraled into a passion for developing applications and solving problems with technology.
                                 </p>
                                 <p data-sal="slide-up" data-sal-delay="400">
-                                    I love coding, security, space, and the beach!
+                                    I love coding, security, space, and the beach.
                                 </p>
                             </div>
                         </div>
