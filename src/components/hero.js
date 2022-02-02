@@ -1,8 +1,7 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { Container, Button } from '@mui/material';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import { Container } from '@mui/material';
 import Socials from './socials';
 
 import * as styles from '../styles/hero.module.css'
