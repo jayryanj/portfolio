@@ -20,7 +20,7 @@ const Hero = () => {
                 </h1>
 
                 <p data-sal="slide-up" data-sal-delay="300" className={styles.description}>
-                    I'm a Software Engineer from Hawai'i.
+                    I'm a Software Developer from Hawai'i.
                 </p>
 
                 <div data-sal="slide-right" data-sal-delay="1000" className={styles.divider}></div>
